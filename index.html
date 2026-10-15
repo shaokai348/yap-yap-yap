@@ -1,42 +1,1550 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Harmony Court</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#D83121">
+  <title>Noise Credit | Pickleball Noise Mitigation</title>
   <style>
-    :root{--ink:#17221d;--muted:#6d756f;--line:#e6ebe7;--paper:#fafcfb;--card:#fff;--green:#19744a;--lime:#d9f56d;--yellow:#efac32;--red:#d95047;--shadow:0 12px 35px rgba(22,39,29,.07)}
-    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}.shell{max-width:1180px;margin:auto;padding:24px}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:30px}.brand{display:flex;gap:11px;align-items:center;font-weight:800;font-size:19px;letter-spacing:-.5px}.mark{width:31px;height:31px;border-radius:10px;background:var(--lime);display:grid;place-items:center}.mark:after{content:"";height:13px;width:13px;border:3px solid var(--ink);border-radius:50%;box-shadow:8px 3px 0 -5px var(--ink)}.profile{display:flex;gap:10px;align-items:center;color:#35423a;font-size:13px}.avatar{height:32px;width:32px;border-radius:50%;display:grid;place-items:center;background:#dae8df;font-weight:700}.tabs{display:flex;gap:5px;background:#eef2ef;width:max-content;padding:4px;border-radius:12px;margin-bottom:24px}.tab{border:0;background:transparent;padding:8px 14px;border-radius:8px;color:#5f6b63;font:inherit;cursor:pointer}.tab.active{background:white;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.07);font-weight:700}.grid{display:grid;grid-template-columns:1.4fr .9fr;gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}h1{font-size:30px;line-height:1.12;letter-spacing:-1.1px;margin:0 0 8px}h2{font-size:17px;letter-spacing:-.3px;margin:0}p{margin:0}.eyebrow{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:1.1px;font-size:11px}.sub{color:var(--muted);margin-top:5px}.court{position:relative;margin-top:22px;height:236px;border-radius:14px;background:#2d8256;overflow:hidden;border:9px solid #296e4c}.court:before,.court:after{content:"";position:absolute;background:#e7f2dc}.court:before{height:2px;left:0;right:0;top:50%}.court:after{width:2px;top:0;bottom:0;left:50%}.court .inner{position:absolute;inset:21px;border:2px solid #e7f2dc;border-radius:5px}.court .inner:after{content:"";position:absolute;left:0;right:0;top:50%;border-top:2px solid #e7f2dc}.court-label{position:absolute;z-index:1;bottom:14px;left:16px;color:#fff;font-weight:750;font-size:12px;background:#1d5b3d;padding:6px 9px;border-radius:7px}.live{display:flex;gap:6px;align-items:center;font-size:12px;color:#fff;position:absolute;right:15px;top:14px;background:rgba(18,63,42,.7);padding:6px 9px;border-radius:7px}.dot{height:7px;width:7px;background:#a5ff70;border-radius:50%;box-shadow:0 0 0 3px rgba(165,255,112,.2)}.session{display:flex;justify-content:space-between;align-items:end;margin-top:18px}.time{font-size:23px;font-weight:800;letter-spacing:-.8px}.fine{font-size:12px;color:var(--muted)}.btn{border:0;border-radius:10px;padding:11px 14px;background:var(--ink);color:white;font:700 14px inherit;cursor:pointer}.btn:hover{filter:brightness(1.15)}.btn.outline{background:#f0f5f1;color:var(--ink)}.metric{display:flex;align-items:center;justify-content:space-between;padding:17px 0;border-bottom:1px solid var(--line)}.metric:last-child{border:0}.metric strong{font-size:21px;letter-spacing:-.8px}.pill{font-size:12px;font-weight:750;padding:5px 8px;border-radius:99px;background:#def6e7;color:#11643b}.pill.warn{background:#fff1d7;color:#9b6200}.section{margin-top:18px}.score-wrap{text-align:center;padding:24px 0 18px}.ring{height:156px;width:156px;margin:auto;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--green) calc(var(--score)*1%),#edf1ee 0);position:relative}.ring:before{content:"";position:absolute;inset:12px;border-radius:50%;background:white}.score{position:relative;font-size:45px;font-weight:850;letter-spacing:-2px}.score small{font-size:14px;letter-spacing:0;color:var(--muted)}.zone{font-weight:750;margin-top:9px}.bar{height:8px;background:#edf1ee;border-radius:9px;overflow:hidden;margin-top:8px}.bar i{display:block;height:100%;width:65%;background:var(--green);border-radius:9px;transition:.35s}.switch{width:42px;height:24px;border-radius:30px;background:#dce3de;padding:3px;cursor:pointer;transition:.2s}.switch i{display:block;background:#fff;width:18px;height:18px;border-radius:50%;transition:.2s;box-shadow:0 1px 3px #999}.switch.on{background:var(--green)}.switch.on i{transform:translateX(18px)}.credit{background:#203b2d;color:#fff}.credit .eyebrow{color:var(--lime)}.credits{font-size:44px;font-weight:800;letter-spacing:-2px;margin:14px 0 4px}.credit-row{display:flex;align-items:center;justify-content:space-between;margin-top:19px;padding-top:15px;border-top:1px solid rgba(255,255,255,.14)}.progress{height:7px;border-radius:7px;background:rgba(255,255,255,.2);margin-top:8px}.progress i{display:block;width:60%;height:100%;background:var(--lime);border-radius:7px}.actions{display:flex;gap:9px;margin-top:18px}.notice{display:none;margin-top:17px;padding:12px;border-radius:10px;background:#fff4db;color:#8b5b00;font-size:13px}.notice.show{display:block}.admin{display:none}.admin.show{display:block}.admin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}.admin .card{box-shadow:none}.big{font-size:30px;font-weight:800;letter-spacing:-1px;margin:6px 0}.row{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}@media(max-width:760px){.shell{padding:17px}.grid{grid-template-columns:1fr}.top{margin-bottom:20px}.profile span{display:none}.admin-grid{grid-template-columns:1fr}h1{font-size:27px}}
+    :root {
+      --red: #D62A1E;
+      --red-dark: #C21E17;
+      --orange: #F05325;
+      --bg: #F9F9F9;
+      --text: #292929;
+      --muted: #747474;
+      --blue: #C9D9FA;
+      --gold: #FBE6A2;
+      --pink: #F4BAC9;
+      --green: #218653;
+      --border: #E9E9E9;
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    button, a {
+      font: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .topbar {
+      min-height: 76px;
+      padding: 14px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      background: linear-gradient(
+        135deg,
+        #C21E17 0%,
+        #D83121 40%,
+        #E64223 75%,
+        #F05325 100%
+      );
+      color: white;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 23px;
+      font-weight: 850;
+      letter-spacing: -1px;
+    }
+
+    .brand-mark {
+      width: 39px;
+      height: 39px;
+      display: grid;
+      place-items: center;
+      border: 2px solid white;
+      border-radius: 50%;
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .brand small {
+      display: block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.6px;
+      line-height: 1.3;
+    }
+
+    .login {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 22px;
+      border: 1px solid rgba(255,255,255,.85);
+      border-radius: 99px;
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: background .2s;
+    }
+
+    .login:hover {
+      background: rgba(255,255,255,.15);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 76px 20px 82px;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(
+        135deg,
+        #C21E17 0%,
+        #D83121 40%,
+        #E64223 75%,
+        #F05325 100%
+      );
+    }
+
+    .hero::before,
+    .hero::after {
+      position: absolute;
+      content: "";
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 390px;
+      height: 390px;
+      left: -180px;
+      top: -230px;
+    }
+
+    .hero::after {
+      width: 460px;
+      height: 460px;
+      right: -180px;
+      bottom: -330px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 870px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 6px 14px;
+      border: 1px solid rgba(255,255,255,.4);
+      border-radius: 50px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 0 auto 20px;
+      font-size: clamp(31px, 5vw, 52px);
+      font-weight: 850;
+      line-height: 1.12;
+      letter-spacing: -1.8px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 0 auto;
+      color: rgba(255,255,255,.9);
+      font-size: 15px;
+    }
+
+    .hero-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 29px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 43px;
+      padding: 10px 21px;
+      border: 1px solid transparent;
+      border-radius: 99px;
+      font-size: 13px;
+      font-weight: 750;
+      transition: transform .2s, background .2s;
+    }
+
+    .pill:hover {
+      transform: translateY(-2px);
+    }
+
+    .pill-white {
+      background: #fff;
+      color: var(--red);
+    }
+
+    .pill-outline {
+      border-color: rgba(255,255,255,.7);
+      color: #fff;
+    }
+
+    .pill-red {
+      background: var(--red);
+      color: white;
+    }
+
+    .pill-dark {
+      background: #292929;
+      color: white;
+    }
+
+    .container {
+      width: min(1160px, 90%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 65px 0;
+    }
+
+    .section-soft {
+      background: var(--bg);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    .section-label {
+      margin: 0 0 8px;
+      color: var(--red);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(25px, 3vw, 35px);
+      font-weight: 850;
+      line-height: 1.2;
+      letter-spacing: -.9px;
+    }
+
+    .section-description {
+      max-width: 600px;
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 12px;
+      border-radius: 99px;
+      background: #fff;
+      font-size: 11px;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      flex: 0 0 8px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    .dot-amber {
+      background: #D89A17;
+    }
+
+    .dot-red {
+      background: #D93636;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      min-width: 0;
+      padding: 25px;
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 3px 16px rgba(0,0,0,.035);
+    }
+
+    .sensor-card {
+      grid-column: span 7;
+      background: var(--blue);
+    }
+
+    .indicator-card {
+      grid-column: span 5;
+      background: #F1F5FE;
+    }
+
+    .card-title {
+      margin: 0 0 5px;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -.3px;
+    }
+
+    .card-subtitle {
+      margin: 0;
+      color: #626C7B;
+      font-size: 12px;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .metric {
+      padding: 15px 12px;
+      border: 1px solid rgba(255,255,255,.65);
+      border-radius: 13px;
+      background: rgba(255,255,255,.65);
+    }
+
+    .metric-value {
+      display: block;
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 850;
+      line-height: 1.3;
+      letter-spacing: -1px;
+    }
+
+    .metric-label {
+      display: block;
+      margin-top: 5px;
+      color: #586274;
+      font-size: 11px;
+      line-height: 1.4;
+    }
+
+    .feed-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid rgba(30,50,90,.12);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .feed-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(30,50,90,.1);
+      font-size: 12px;
+    }
+
+    .feed-row:last-child {
+      border-bottom: 0;
+    }
+
+    .feed-name {
+      display: block;
+      font-weight: 750;
+    }
+
+    .feed-meta {
+      display: block;
+      margin-top: 3px;
+      color: #586274;
+      font-size: 11px;
+    }
+
+    .feed-value {
+      align-self: center;
+      font-size: 13px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .impulse-note {
+      margin-top: 16px;
+      padding: 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.7);
+      font-size: 12px;
+    }
+
+    .impulse-note strong {
+      color: #294B91;
+    }
+
+    .db-display {
+      margin: 22px 0 10px;
+      text-align: center;
+    }
+
+    .db-number {
+      font-size: clamp(58px, 7vw, 80px);
+      font-weight: 850;
+      line-height: 1.05;
+      letter-spacing: -4px;
+    }
+
+    .db-unit {
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .db-caption {
+      margin-top: 8px;
+      color: #6D7480;
+      font-size: 12px;
+    }
+
+    .traffic-lights {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 25px 0 18px;
+    }
+
+    .light {
+      width: 45px;
+      height: 45px;
+      border: 5px solid rgba(255,255,255,.8);
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,.04);
+    }
+
+    .light-green {
+      background: #39A86B;
+    }
+
+    .light-amber {
+      background: #F1BD3C;
+    }
+
+    .light-red {
+      background: #DF5151;
+    }
+
+    .light-muted {
+      opacity: .25;
+    }
+
+    .status-message {
+      margin: 0;
+      padding: 13px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.7);
+      text-align: center;
+      font-size: 12px;
+      font-weight: 750;
+    }
+
+    .thresholds {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .threshold {
+      padding: 12px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.65);
+    }
+
+    .threshold strong {
+      display: block;
+      font-size: 16px;
+    }
+
+    .threshold span {
+      display: block;
+      color: #626C7B;
+      font-size: 10px;
+    }
+
+    .booking-card {
+      grid-column: span 7;
+      background: var(--gold);
+    }
+
+    .credits-card {
+      grid-column: span 5;
+      background: #FFF6D9;
+    }
+
+    .booking-summary {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .summary-item {
+      padding: 15px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.7);
+    }
+
+    .summary-item span {
+      display: block;
+      color: #776C49;
+      font-size: 11px;
+    }
+
+    .summary-item strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 19px;
+    }
+
+    .checkin-box {
+      padding: 22px;
+      border: 1px dashed rgba(115,88,13,.35);
+      border-radius: 14px;
+      background: rgba(255,255,255,.45);
+      text-align: center;
+    }
+
+    .qr-icon {
+      width: 66px;
+      height: 66px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 12px;
+      border: 2px solid #3A3424;
+      border-radius: 9px;
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .checkin-box h3 {
+      margin: 0 0 5px;
+      font-size: 16px;
+    }
+
+    .checkin-box p {
+      margin: 0 0 17px;
+      color: #756A4D;
+      font-size: 12px;
+    }
+
+    .quiet-progress {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin: 22px 0;
+    }
+
+    .progress-ring {
+      width: 120px;
+      height: 120px;
+      display: grid;
+      flex: 0 0 120px;
+      place-items: center;
+      border-radius: 50%;
+      background: conic-gradient(
+        var(--red) 0deg 331deg,
+        rgba(214,42,30,.12) 331deg 360deg
+      );
+      position: relative;
+    }
+
+    .progress-ring::before {
+      position: absolute;
+      content: "";
+      inset: 10px;
+      border-radius: 50%;
+      background: #FFF6D9;
+    }
+
+    .ring-content {
+      position: relative;
+      text-align: center;
+    }
+
+    .ring-number {
+      display: block;
+      font-size: 30px;
+      font-weight: 850;
+      line-height: 1.2;
+    }
+
+    .ring-caption {
+      display: block;
+      color: #786D4D;
+      font-size: 10px;
+    }
+
+    .progress-copy strong {
+      display: block;
+      font-size: 15px;
+    }
+
+    .progress-copy p {
+      margin: 5px 0 0;
+      color: #756A4D;
+      font-size: 12px;
+    }
+
+    .reward-status {
+      padding: 13px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.7);
+      font-size: 12px;
+    }
+
+    .wallet-balance {
+      margin: 22px 0;
+      padding: 23px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, #E8B83E, #F6D77E);
+    }
+
+    .wallet-label {
+      color: #69531B;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .wallet-value {
+      margin: 5px 0;
+      font-size: 39px;
+      font-weight: 850;
+      line-height: 1.2;
+      letter-spacing: -1px;
+    }
+
+    .wallet-caption {
+      color: #69531B;
+      font-size: 11px;
+    }
+
+    .ledger-title {
+      margin: 0 0 10px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .ledger-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(115,88,13,.13);
+      font-size: 12px;
+    }
+
+    .ledger-row:last-child {
+      border-bottom: 0;
+    }
+
+    .ledger-row strong {
+      white-space: nowrap;
+    }
+
+    .ledger-row small {
+      display: block;
+      color: #756A4D;
+      font-size: 10px;
+    }
+
+    .enforcement-card {
+      grid-column: span 12;
+      background: var(--pink);
+    }
+
+    .enforcement-intro {
+      max-width: 680px;
+      margin: 8px 0 24px;
+      color: #76525D;
+      font-size: 13px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 13px;
+    }
+
+    .step {
+      padding: 20px;
+      border: 1px solid rgba(125,47,69,.12);
+      border-radius: 14px;
+      background: rgba(255,255,255,.52);
+    }
+
+    .step-number {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 15px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.85);
+      color: #A23B59;
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .step h3 {
+      margin: 0 0 7px;
+      font-size: 15px;
+    }
+
+    .step p {
+      margin: 0;
+      color: #76525D;
+      font-size: 12px;
+    }
+
+    .step small {
+      display: inline-block;
+      margin-top: 13px;
+      padding: 4px 9px;
+      border-radius: 50px;
+      background: rgba(255,255,255,.75);
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .simulation-controls {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .demo-note {
+      margin: 15px 0 0;
+      color: #76525D;
+      font-size: 11px;
+    }
+
+    .faq-list {
+      margin-top: 30px;
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item summary {
+      position: relative;
+      padding: 22px 38px 22px 0;
+      cursor: pointer;
+      list-style: none;
+      font-size: 15px;
+      font-weight: 750;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      position: absolute;
+      top: 20px;
+      right: 5px;
+      content: "+";
+      color: var(--red);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-content {
+      max-width: 850px;
+      padding: 0 35px 22px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 28px 6%;
+      background: #292929;
+      color: white;
+    }
+
+    .footer-inner {
+      width: min(1160px, 100%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin: auto;
+    }
+
+    .footer-brand {
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .footer-note {
+      color: #BDBDBD;
+      font-size: 11px;
+    }
+
+    @media (max-width: 760px) {
+      .topbar {
+        padding: 13px 5%;
+      }
+
+      .brand {
+        font-size: 19px;
+      }
+
+      .login {
+        padding: 9px 13px;
+        font-size: 11px;
+      }
+
+      .hero {
+        padding: 60px 20px;
+      }
+
+      .section {
+        padding: 48px 0;
+      }
+
+      .section-heading {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .sensor-card,
+      .indicator-card,
+      .booking-card,
+      .credits-card {
+        grid-column: span 12;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        align-items: start;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .container {
+        width: 92%;
+      }
+
+      .card {
+        padding: 19px;
+      }
+
+      .metric-grid {
+        gap: 7px;
+      }
+
+      .metric {
+        padding: 12px 8px;
+      }
+
+      .metric-value {
+        font-size: 22px;
+      }
+
+      .booking-summary {
+        gap: 8px;
+      }
+
+      .quiet-progress {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .thresholds {
+        gap: 7px;
+      }
+    
+      .noise-select {
+        display: block;
+        width: 100%;
+        margin-top: 8px;
+        padding: 12px;
+        border: 1px solid #d9e0ed;
+        border-radius: 10px;
+        background: white;
+        color: #292929;
+        font: inherit;
+        font-size: 13px;
+      }
+
+      .slider-label {
+        display: block;
+        margin-top: 24px;
+        font-size: 13px;
+        font-weight: 750;
+      }
+
+      #noiseSlider {
+        display: block;
+        width: 100%;
+        margin: 15px 0 8px;
+        accent-color: #D62A1E;
+        cursor: pointer;
+      }
+
+      .slider-range {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        color: #6D7480;
+        font-size: 10px;
+      }
+
+      #noiseStatus {
+        transition: background .2s, color .2s;
+      }
+
+      #noiseStatus.status-green {
+        background: #DDF4E5;
+        color: #17683A;
+      }
+
+      #noiseStatus.status-amber {
+        background: #FFF0C2;
+        color: #805800;
+      }
+
+      #noiseStatus.status-red {
+        background: #FCE1E1;
+        color: #A51E1E;
+      }
+
+      #noiseStatus.status-muted {
+        background: #E9E9E9;
+        color: #555;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <main class="shell">
-    <header class="top"><div class="brand"><span class="mark"></span>Harmony Court</div><div class="profile"><span>ActiveSG linked</span><span class="avatar">JL</span></div></header>
-    <nav class="tabs"><button class="tab active" data-view="player">My session</button><button class="tab" data-view="council">Council dashboard</button></nav>
-    <section id="player">
-      <div class="grid">
-        <div>
-          <article class="card">
-            <p class="eyebrow">Court 3 · Toa Payoh Central</p><h1>Play well. Keep it neighbourly.</h1><p class="sub">Your session is identity-verified and monitored only for sound levels — never recorded.</p>
-            <div class="court"><div class="inner"></div><div class="live"><span class="dot"></span> Sensor live</div><div class="court-label">7:00 PM — 8:00 PM</div></div>
-            <div class="session"><div><div class="fine">Session time remaining</div><div class="time" id="timer">42:18</div></div><button class="btn outline" id="checkin">Singpass verified ✓</button></div>
-          </article>
-          <article class="card section"><div style="display:flex;justify-content:space-between;align-items:center"><div><h2>Quiet Play Mode</h2><p class="sub">Stay under 65 dB average to earn credits.</p></div><div class="switch on" id="quiet"><i></i></div></div><div class="bar"><i id="quietBar"></i></div><div class="row"><span class="fine">Current average</span><strong id="avg">58 dB</strong></div><div class="notice" id="notice">Sound level is elevated. Soften your shots and voices to protect your Quiet Play streak.</div><div class="actions"><button class="btn" id="soft">Log soft rally</button><button class="btn outline" id="loud">Simulate loud play</button></div></article>
-        </div>
-        <div>
-          <article class="card"><div style="display:flex;justify-content:space-between"><div><h2>Live Harmony Score</h2><p class="sub">Court-only impact measurement</p></div><span class="pill" id="status">Excellent</span></div><div class="score-wrap"><div class="ring" id="ring" style="--score:88"><div class="score" id="score">88<small>/100</small></div></div><div class="zone" id="zone">Excellent control</div><p class="fine">Keep your rallies gentle to stay in the green.</p></div><div class="metric"><span>Impact impulses</span><strong id="impulses">3 <span class="fine">/ 10</span></strong></div><div class="metric"><span>Lighting</span><span class="pill" id="lights">100% · Normal</span></div></article>
-          <article class="card credit section"><p class="eyebrow">Community Noise Credits</p><div class="credits"><span id="credits">60</span> <span style="font-size:17px;letter-spacing:0">credits</span></div><p style="color:#bed0c3">One quiet session = 10 credits</p><div class="credit-row"><div><strong>40 to your next reward</strong><div class="progress"><i id="creditProgress"></i></div></div><span class="pill" style="background:var(--lime);color:var(--ink)">$5 voucher</span></div></article>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="ActiveSG home">
+      <span class="brand-mark">A</span>
+      <span>
+        Noise Credits
+        <small>SPORT FOR EVERYONE</small>
+      </span>
+    </a>
+
+    <a class="login" href="#login">
+      Log in via Singpass ↗
+    </a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">Play fair. Play together.</span>
+
+        <h1>
+          Book facilities, earn Community Noise Credits, and play
+          responsibly with your kakis
+        </h1>
+
+        <p>
+          A proposed community-first approach to quieter pickleball courts,
+          real-time noise awareness, and fairer shared spaces.
+        </p>
+
+        <div class="hero-links">
+          <a class="pill pill-white" href="#booking">
+            Explore court credits
+          </a>
+          <a class="pill pill-outline" href="#sensors">
+            Discover noise monitoring
+          </a>
         </div>
       </div>
     </section>
-    <section id="council" class="admin"><p class="eyebrow">Town Council · Operational overview</p><h1>Noise patterns, not complaints.</h1><p class="sub">Aggregated court data for targeted, evidence-led decisions.</p><div class="admin-grid"><article class="card"><p class="fine">Active courts</p><div class="big">12 <span class="fine">/ 16</span></div><span class="pill">All systems online</span></article><article class="card"><p class="fine">Quiet sessions today</p><div class="big">84%</div><span class="pill">+9% this week</span></article><article class="card"><p class="fine">Cooldowns triggered</p><div class="big">3</div><span class="pill warn">-4 vs. last week</span></article></div><article class="card section"><h2>Courts needing attention</h2><div class="row"><div><strong>Toa Payoh Central · Court 1</strong><div class="fine">4 warnings · peak 7:00–9:00 PM</div></div><span class="pill warn">Review</span></div><div class="row"><div><strong>Lorong 8 · Court 2</strong><div class="fine">Healthy score · 91/100</div></div><span class="pill">On track</span></div><div class="row"><div><strong>Kim Keat · Court 4</strong><div class="fine">Lighting cooldown 18 min ago</div></div><span class="pill warn">Monitor</span></div></article></section>
+
+    <!-- STRATEGY 2: SENSOR DASHBOARD -->
+    <section class="section section-soft" id="sensors">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Strategy 02 · Real-time monitoring</p>
+            <h2>Listen smarter. Play quieter.</h2>
+            <p class="section-description">
+              An anonymized sensor dashboard designed to give residents
+              and Town Councils a consistent view of court noise.
+            </p>
+          </div>
+
+          <span class="tag">
+            <span class="dot"></span>
+            Illustrative sensor demo
+          </span>
+        </div>
+
+        <div class="grid">
+          <article class="card sensor-card">
+            <div class="card-top">
+              <div>
+                <h3 class="card-title">Community sensor feed</h3>
+                <p class="card-subtitle">
+                  Anonymized acoustic events · Sample court data
+                </p>
+              </div>
+              <span class="tag">COURT A-01</span>
+            </div>
+
+            <div class="metric-grid">
+              <div class="metric">
+                <span class="metric-value">52.4</span>
+                <span class="metric-label">Ambient noise · dB</span>
+              </div>
+
+              <div class="metric">
+                <span class="metric-value">1,250</span>
+                <span class="metric-label">Target impulse · Hz</span>
+              </div>
+
+              <div class="metric">
+                <span class="metric-value">03</span>
+                <span class="metric-label">Sample events detected</span>
+              </div>
+            </div>
+
+            <div class="feed-title">
+              <span>ACOUSTIC EVENT</span>
+              <span>READING</span>
+            </div>
+
+            <div class="feed-row">
+              <div>
+                <span class="feed-name">Paddle impulse detected</span>
+                <span class="feed-meta">10:42:08 PM · Anonymized</span>
+              </div>
+              <span class="feed-value">54.2 dB</span>
+            </div>
+
+            <div class="feed-row">
+              <div>
+                <span class="feed-name">Ambient background</span>
+                <span class="feed-meta">10:42:05 PM · Sample reading</span>
+              </div>
+              <span class="feed-value">48.6 dB</span>
+            </div>
+
+            <div class="feed-row">
+              <div>
+                <span class="feed-name">Paddle impulse detected</span>
+                <span class="feed-meta">10:41:58 PM · Anonymized</span>
+              </div>
+              <span class="feed-value">53.1 dB</span>
+            </div>
+
+            <div class="impulse-note">
+              <strong>Impulse tracking:</strong>
+              The proposed system targets the distinctive approximately
+              1,250 Hz paddle impulse signature to help distinguish paddle
+              impacts from ambient background noise. Reliable classification
+              would require calibrated sensors and field validation.
+            </div>
+          </article>
+
+          <article class="card indicator-card">
+            <div class="card-top">
+              <div>
+                <h3 class="card-title">Noise Level Simulator</h3>
+                <p class="card-subtitle">Adjust the sound level to test responses</p>
+              </div>
+              <span class="tag">LIVE DEMO</span>
+            </div>
+
+            <label for="noisePeriod"><strong>Time period</strong></label>
+            <select id="noisePeriod" class="noise-select">
+              <option value="shoulder">Shoulder hours (50–55 dB)</option>
+              <option value="peak">Peak hours (75 dB threshold)</option>
+            </select>
+
+            <div class="db-display">
+              <div class="db-number">
+                <span id="dbValue">52</span><span class="db-unit"> dB</span>
+              </div>
+              <div class="db-caption">Simulated sound level</div>
+            </div>
+
+            <label for="noiseSlider" class="slider-label">
+              Adjust noise level
+            </label>
+            <input
+              id="noiseSlider"
+              type="range"
+              min="35"
+              max="90"
+              value="52"
+              step="1"
+              aria-label="Simulated noise level in decibels"
+            />
+
+            <div class="slider-range">
+              <span>35 dB · Quiet</span>
+              <span>90 dB · Loud</span>
+            </div>
+
+            <div class="traffic-lights" aria-label="Noise status">
+              <span class="light light-green light-muted" id="lightGreen"></span>
+              <span class="light light-amber light-muted" id="lightAmber"></span>
+              <span class="light light-red light-muted" id="lightRed"></span>
+            </div>
+
+            <p class="status-message" id="noiseStatus" aria-live="polite">
+              GREEN · Noise is within the guidance range
+            </p>
+
+            <div class="thresholds">
+              <div class="threshold">
+                <strong id="thresholdValue">50–55 dB</strong>
+                <span>Selected guidance threshold</span>
+              </div>
+              <div class="threshold">
+                <strong id="noiseCategory">Shoulder hours</strong>
+                <span>Simulation period</span>
+              </div>
+            </div>
+
+            <p class="card-subtitle" style="margin-top:18px">
+              Demonstration only. Readings are simulated and do not come from
+              a physical microphone or court sensor.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRATEGY 3: BOOKING AND CREDITS -->
+    <section class="section" id="booking">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Strategy 03 · Community rewards</p>
+            <h2>Good games deserve good credits.</h2>
+            <p class="section-description">
+              A proposed court check-in and collective rewards experience
+              that encourages every player to help keep noise manageable.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <article class="card booking-card">
+            <div class="card-top">
+              <div>
+                <h3 class="card-title">Your court session</h3>
+                <p class="card-subtitle">
+                  Booking overview · Sample session
+                </p>
+              </div>
+              <span class="tag">PENDING CHECK-IN</span>
+            </div>
+
+            <div class="booking-summary">
+              <div class="summary-item">
+                <span>Facility</span>
+                <strong>Community Court A</strong>
+              </div>
+              <div class="summary-item">
+                <span>Session duration</span>
+                <strong>60 minutes</strong>
+              </div>
+              <div class="summary-item">
+                <span>Quiet-play target</span>
+                <strong>90% or more</strong>
+              </div>
+              <div class="summary-item">
+                <span>Session window</span>
+                <strong>7 PM – 8 PM</strong>
+              </div>
+            </div>
+
+            <div class="checkin-box">
+              <div class="qr-icon" aria-hidden="true">▦</div>
+              <h3>Ready to check in?</h3>
+              <p>
+                Scan the QR code displayed at the physical court.
+                A real service would verify your booking and identity
+                through an authorized Singpass integration.
+              </p>
+              <button class="pill pill-red" type="button">
+                Scan QR Code on Court
+              </button>
+            </div>
+
+            <div class="quiet-progress">
+              <div class="progress-ring" role="img"
+                   aria-label="Illustrative quiet-play score of 92 percent">
+                <div class="ring-content">
+                  <span class="ring-number">92%</span>
+                  <span class="ring-caption">QUIET PLAY</span>
+                </div>
+              </div>
+
+              <div class="progress-copy">
+                <strong>On track for community credits</strong>
+                <p>
+                  Illustrative session score. Credits are eligible in
+                  this proposal when noise stays within the applicable
+                  threshold for at least 90% of the booking duration.
+                </p>
+              </div>
+            </div>
+
+            <div class="reward-status">
+              <strong>Quiet-play reference thresholds</strong><br>
+              7 AM–7 PM: 65 dB · 7 PM–11 PM: 60 dB
+            </div>
+          </article>
+
+          <article class="card credits-card">
+            <div class="card-top">
+              <div>
+                <h3 class="card-title">Community rewards wallet</h3>
+                <p class="card-subtitle">
+                  Collective stakes · Illustrative balance
+                </p>
+              </div>
+              <span class="tag">PROPOSAL</span>
+            </div>
+
+            <div class="wallet-balance">
+              <div class="wallet-label">Community Noise Credits</div>
+              <div class="wallet-value">120 CN</div>
+              <div class="wallet-caption">
+                Sample collective balance · Not redeemable currency
+              </div>
+            </div>
+
+            <h4 class="ledger-title">Rewards ledger</h4>
+
+            <div class="ledger-row">
+              <div>
+                <strong>Quiet-play session</strong>
+                <small>Illustrative collective reward</small>
+              </div>
+              <strong>+20 CN</strong>
+            </div>
+
+            <div class="ledger-row">
+              <div>
+                <strong>Community contribution</strong>
+                <small>Sample reward allocation</small>
+              </div>
+              <strong>+10 CN</strong>
+            </div>
+
+            <div class="ledger-row">
+              <div>
+                <strong>Potential redemption</strong>
+                <small>Subject to programme approval</small>
+              </div>
+              <strong>ActiveSG$</strong>
+            </div>
+
+            <div class="ledger-row">
+              <div>
+                <strong>Community redemption</strong>
+                <small>Subject to programme approval</small>
+              </div>
+              <strong>CDC Vouchers</strong>
+            </div>
+
+            <p class="card-subtitle" style="margin-top:18px;">
+              All balances and rewards shown are mock data. Actual
+              redemption would require an approved rewards programme.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRESSIVE ENFORCEMENT -->
+    <section class="section section-soft" id="enforcement">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Community safeguards · Progressive enforcement</p>
+            <h2>Fair warnings. Clear consequences.</h2>
+            <p class="section-description">
+              A graduated response model designed to nudge behavior
+              before introducing booking restrictions.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <article class="card enforcement-card">
+            <div class="card-top">
+              <div>
+                <h3 class="card-title">Breach response framework</h3>
+                <p class="card-subtitle">
+                  Proposed escalation policy
+                </p>
+              </div>
+              <span class="tag">3-STAGE MODEL</span>
+            </div>
+
+            <p class="enforcement-intro">
+              Each stage represents a potential response to a confirmed
+              breach. Actual enforcement would need defined evidence
+              standards, notification procedures, and an appeal process.
+            </p>
+
+            <div class="steps">
+              <div class="step">
+                <div class="step-number">01</div>
+                <h3>First violation</h3>
+                <p>
+                  Real-time sensor alarm: Please lower noise immediately.
+                  A visible or audible nudge encourages prompt correction.
+                </p>
+                <small>REAL-TIME WARNING</small>
+              </div>
+
+              <div class="step">
+                <div class="step-number">02</div>
+                <h3>Second violation</h3>
+                <p>
+                  Loss of credit-earning ability for the next 3 bookings,
+                  subject to review of the recorded breaches.
+                </p>
+                <small>3-BOOKING RESTRICTION</small>
+              </div>
+
+              <div class="step">
+                <div class="step-number">03</div>
+                <h3>Third violation</h3>
+                <p>
+                  Loss of booking priority for the next 1 month,
+                  following the proposed escalation policy.
+                </p>
+                <small>1-MONTH RESTRICTION</small>
+              </div>
+            </div>
+
+            <div class="simulation-controls">
+              <button class="pill pill-red" type="button">
+                Simulate Noise Breach
+              </button>
+              <button class="pill pill-dark" type="button">
+                Reset System
+              </button>
+            </div>
+
+            <p class="demo-note">
+              Visual demonstration only. The buttons are not connected
+              to an enforcement engine in this HTML/CSS-only version.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPOSAL DISCLOSURE / FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <p class="section-label">Proposal disclosure</p>
+        <h2>Frequently asked questions</h2>
+        <p class="section-description">
+          Understand the proposed approach, its benefits, and the
+          considerations involved in community implementation.
+        </p>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>
+              What are the core strengths of the Impulse Sensor system?
+            </summary>
+            <div class="faq-content">
+              It is preventive and real-time; creates a standardized
+              evidence base that Town Councils currently lack (resolving
+              disagreements over 10dB); it is cheap ($300/court) and
+              scalable; it leaves court access open and hits upper-storey
+              residents that barriers cannot shield.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              What are the limitations of these strategies?
+            </summary>
+            <div class="faq-content">
+              It requires explicit Town Council and HDB consent to install
+              and maintain, depends heavily on reliable, calibrated sensors,
+              and carries risks of free-riding or group credits being
+              penalized by a single player's noise.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
   </main>
-  <script>
-    const q=s=>document.querySelector(s);let score=88, impulses=3, credits=60, loud=false;
-    document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');q('#player').style.display=b.dataset.view==='player'?'block':'none';q('#council').classList.toggle('show',b.dataset.view==='council')});
-    q('#quiet').onclick=()=>q('#quiet').classList.toggle('on');q('#checkin').onclick=()=>alert('Your Singpass identity is verified for this booking.');
-    function render(){q('#score').innerHTML=score+'<small>/100</small>';q('#ring').style.setProperty('--score',score);q('#impulses').innerHTML=impulses+' <span class="fine">/ 10</span>';const low=score<50;q('#zone').textContent=low?'High impact detected':score<80?'Keep it friendly':'Excellent control';q('#status').textContent=low?'High impact':score<80?'Heads up':'Excellent';q('#status').className='pill '+(low||score<80?'warn':'');q('#avg').textContent=loud?'76 dB':'58 dB';q('#quietBar').style.width=loud?'38%':'65%';q('#notice').classList.toggle('show',loud);q('#lights').textContent=impulses>=10?'20% · Cooling down':'100% · Normal';q('#lights').className='pill '+(impulses>=10?'warn':'')}
-    q('#soft').onclick=()=>{score=Math.min(100,score+3);impulses=Math.max(0,impulses-1);credits+=10;loud=false;q('#credits').textContent=credits;q('#creditProgress').style.width=Math.min(100,credits)+'%';render()};q('#loud').onclick=()=>{score=Math.max(20,score-25);impulses=Math.min(10,impulses+4);loud=true;render()};render();
-  </script>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">ActiveSG · Community Noise Mitigation</div>
+      <div class="footer-note">
+        Concept dashboard · Sample readings and rewards · Not an official
+        ActiveSG service
+      </div>
+    </div>
+  </footer>
+  
+<script>
+(() => {
+  const slider = document.getElementById("noiseSlider");
+  const period = document.getElementById("noisePeriod");
+  const valueDisplay = document.getElementById("dbValue");
+  const status = document.getElementById("noiseStatus");
+  const thresholdValue = document.getElementById("thresholdValue");
+  const category = document.getElementById("noiseCategory");
+
+  const lights = {
+    green: document.getElementById("lightGreen"),
+    amber: document.getElementById("lightAmber"),
+    red: document.getElementById("lightRed")
+  };
+
+  function updateNoise() {
+    const db = Number(slider.value);
+    const isPeak = period.value === "peak";
+
+    valueDisplay.textContent = db;
+    thresholdValue.textContent = isPeak ? "75 dB" : "50–55 dB";
+    category.textContent = isPeak ? "Peak hours" : "Shoulder hours";
+
+    let state;
+    let message;
+
+    if (isPeak) {
+      // Peak-hour demonstration:
+      // Green below 65 dB, amber from 65 to 75 dB,
+      // red above 75 dB.
+      if (db < 65) {
+        state = "green";
+        message = "GREEN · Noise is within the guidance range";
+      } else if (db <= 75) {
+        state = "amber";
+        message = "AMBER · Approaching the 75 dB threshold";
+      } else {
+        state = "red";
+        message = "RED · Noise exceeds 75 dB";
+      }
+    } else {
+      // Shoulder-hour demonstration:
+      // Green below 50 dB, amber from 50 to 55 dB,
+      // red above 55 dB.
+      if (db < 50) {
+        state = "green";
+        message = "GREEN · Noise is within the guidance range";
+      } else if (db <= 55) {
+        state = "amber";
+        message = "AMBER · Be mindful of surrounding residents";
+      } else {
+        state = "red";
+        message = "RED · Noise exceeds the shoulder-hour range";
+      }
+    }
+
+    Object.entries(lights).forEach(([name, light]) => {
+      light.classList.toggle("light-muted", name !== state);
+    });
+
+    status.className = "status-message status-" + state;
+    status.textContent = message;
+
+    slider.setAttribute(
+      "aria-valuetext",
+      db + " decibels, " + state + " status"
+    );
+  }
+
+  slider.addEventListener("input", updateNoise);
+  period.addEventListener("change", updateNoise);
+
+  updateNoise();
+})();
+</script>
+
 </body>
 </html>
