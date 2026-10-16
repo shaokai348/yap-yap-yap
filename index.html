@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -998,41 +997,27 @@
 
 <body>
   <header class="topbar">
-    <a class="brand" href="#" aria-label="ActiveSG home">
-      <span class="brand-mark">A</span>
-      <span>
-        Noise Credits
-        <small>SPORT FOR EVERYONE</small>
-      </span>
+    <a class="brand" href="#" aria-label="ActiveSG home"><span class="brand-mark">A</span>
+      <span>Noise Credits<br><small>SPORT FOR EVERYONE</small></span>
     </a>
 
-    <a class="login" href="#login">
-      Log in via Singpass ↗
-    </a>
+    <a class="login" href="#login">Log in via Singpass</a>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-content">
         <span class="eyebrow">Play fair. Play together.</span>
-
         <h1>
-          Book facilities, earn Community Noise Credits, and play
-          responsibly with your kakis
+          Book facilities, earn Community Noise Credits, and play responsibly.
         </h1>
-
         <p>
-          A proposed community-first approach to quieter pickleball courts,
+          A proposed community-first approach to quieter pickleball courts, balancing
           real-time noise awareness, and fairer shared spaces.
         </p>
-
         <div class="hero-links">
-          <a class="pill pill-white" href="#booking">
-            Explore court credits
-          </a>
-          <a class="pill pill-outline" href="#sensors">
-            Discover noise monitoring
-          </a>
+          <a class="pill pill-white" href="#booking">Explore court credits</a>
+          <a class="pill pill-outline" href="#sensors">Discover noise monitoring</a>
         </div>
       </div>
     </section>
@@ -1042,18 +1027,12 @@
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="section-label">Strategy 02 · Real-time monitoring</p>
+            <p class="section-label">Strategy</p>
             <h2>Listen smarter. Play quieter.</h2>
-            <p class="section-description">
-              An anonymized sensor dashboard designed to give residents
-              and Town Councils a consistent view of court noise.
-            </p>
+            <p class="section-description">An anonymized sensor dashboard designed to give residents
+              and Town Councils a consistent view of court noise.</p>
           </div>
-
-          <span class="tag">
-            <span class="dot"></span>
-            Illustrative sensor demo
-          </span>
+          <div class="tag"><span class="dot"></span>COURT A-01</div>
         </div>
 
         <div class="grid">
@@ -1061,62 +1040,53 @@
             <div class="card-top">
               <div>
                 <h3 class="card-title">Community sensor feed</h3>
-                <p class="card-subtitle">
-                  Anonymized acoustic events · Sample court data
-                </p>
+                <p class="card-subtitle">Anonymized acoustic events — Sample court data</p>
               </div>
-              <span class="tag">COURT A-01</span>
+              <div class="card-subtitle">COURT A-01</div>
             </div>
 
             <div class="metric-grid">
               <div class="metric">
                 <span class="metric-value">52.4</span>
-                <span class="metric-label">Ambient noise · dB</span>
+                <span class="metric-label">Ambient noise — dB</span>
               </div>
-
               <div class="metric">
                 <span class="metric-value">1,250</span>
-                <span class="metric-label">Target impulse · Hz</span>
+                <span class="metric-label">Target impulse Hz</span>
               </div>
-
               <div class="metric">
                 <span class="metric-value">03</span>
                 <span class="metric-label">Sample events detected</span>
               </div>
             </div>
 
-            <div class="feed-title">
-              <span>ACOUSTIC EVENT</span>
-              <span>READING</span>
-            </div>
-
+            <div class="feed-title">Recent sensor events <span></span></div>
             <div class="feed-row">
               <div>
                 <span class="feed-name">Paddle impulse detected</span>
-                <span class="feed-meta">10:42:08 PM · Anonymized</span>
+                <span class="feed-meta">10:42:08 PM — Anonymized</span>
               </div>
-              <span class="feed-value">54.2 dB</span>
+              <div class="feed-value">54.2 dB</div>
             </div>
 
             <div class="feed-row">
               <div>
                 <span class="feed-name">Ambient background</span>
-                <span class="feed-meta">10:42:05 PM · Sample reading</span>
+                <span class="feed-meta">10:42:05 PM — Sample reading</span>
               </div>
-              <span class="feed-value">48.6 dB</span>
+              <div class="feed-value">48.6 dB</div>
             </div>
 
             <div class="feed-row">
               <div>
                 <span class="feed-name">Paddle impulse detected</span>
-                <span class="feed-meta">10:41:58 PM · Anonymized</span>
+                <span class="feed-meta">10:41:58 PM — Anonymized</span>
               </div>
-              <span class="feed-value">53.1 dB</span>
+              <div class="feed-value">53.1 dB</div>
             </div>
 
-            <div class="impulse-note">
-              <strong>Impulse tracking:</strong>
-              The proposed system targets the distinctive approximately
+            <div class="impulse-note"><strong>Impulse tracking:</strong>
+              The proposed system targets the distinctive 
               1,250 Hz paddle impulse signature to help distinguish paddle
               impacts from ambient background noise. Reliable classification
               would require calibrated sensors and field validation.
@@ -1126,28 +1096,41 @@
           <article class="card indicator-card">
             <div class="card-top">
               <div>
-                <h3 class="card-title">Noise Level Simulator</h3>
+                <h3 class="card-title">Noise level simulator</h3>
                 <p class="card-subtitle">Adjust the sound level to test responses</p>
               </div>
-              <span class="tag">LIVE DEMO</span>
+              <div class="card-subtitle">ACOUSTIC EVENT</div>
             </div>
 
-            <label for="noisePeriod"><strong>Time period</strong></label>
-            <select id="noisePeriod" class="noise-select">
-              <option value="shoulder">Shoulder hours (50–55 dB)</option>
-              <option value="peak">Peak hours (75 dB threshold)</option>
-            </select>
+            <div class="feed-row">
+              <div>
+                <span class="feed-name">Paddle impulse detected</span>
+                <span class="feed-meta">PADDLE impulse detected</span>
+              </div>
+              <div class="feed-value">54.2 dB</div>
+            </div>
+
+            <div class="feed-row">
+              <div>
+                <span class="feed-name">Ambient background</span>
+                <span class="feed-meta">Sample events detected</span>
+              </div>
+              <div class="feed-value">48.6 dB</div>
+            </div>
 
             <div class="db-display">
-              <div class="db-number">
-                <span id="dbValue">52</span><span class="db-unit"> dB</span>
-              </div>
+              <div class="db-number" id="dbValue">52</div>
+              <div class="db-unit">dB</div>
               <div class="db-caption">Simulated sound level</div>
             </div>
 
-            <label for="noiseSlider" class="slider-label">
-              Adjust noise level
-            </label>
+            <label for="noisePeriod"><strong>Time period</strong></label>
+            <select id="noisePeriod" class="noise-select" aria-label="Simulation period">
+              <option value="shoulder">Shoulder hours (60 dB)</option>
+              <option value="peak">Peak hours (65 dB threshold)</option>
+            </select>
+
+            <label class="slider-label">Adjust noise level</label>
             <input
               id="noiseSlider"
               type="range"
@@ -1158,151 +1141,79 @@
               aria-label="Simulated noise level in decibels"
             />
 
-            <div class="slider-range">
-              <span>35 dB · Quiet</span>
-              <span>90 dB · Loud</span>
-            </div>
+            <div class="slider-range"><span>35 dB Quiet</span><span>90 dB Loud</span></div>
 
             <div class="traffic-lights" aria-label="Noise status">
-              <span class="light light-green light-muted" id="lightGreen"></span>
-              <span class="light light-amber light-muted" id="lightAmber"></span>
-              <span class="light light-red light-muted" id="lightRed"></span>
+              <div id="lightGreen" class="light light-green light-muted"></div>
+              <div id="lightAmber" class="light light-amber light-muted"></div>
+              <div id="lightRed" class="light light-red light-muted"></div>
             </div>
 
-            <p class="status-message" id="noiseStatus" aria-live="polite">
-              GREEN · Noise is within the guidance range
-            </p>
+            <div id="noiseStatus" class="status-message"> </div>
 
             <div class="thresholds">
               <div class="threshold">
-                <strong id="thresholdValue">50–55 dB</strong>
-                <span>Selected guidance threshold</span>
+                <strong id="thresholdValue">50…60 dB</strong>
+                <span>Shoulder / peak guidance</span>
               </div>
               <div class="threshold">
-                <strong id="noiseCategory">Shoulder hours</strong>
-                <span>Simulation period</span>
+                <strong>Community target</strong>
+                <span>Be mindful — quieter courts are better for neighbours</span>
               </div>
             </div>
 
-            <p class="card-subtitle" style="margin-top:18px">
-              Demonstration only. Readings are simulated and do not come from
-              a physical microphone or court sensor.
-            </p>
+            <div class="simulation-controls">
+              <button class="pill pill-red" id="scanQr">Scan QR Code</button>
+              <button class="pill pill-dark">Reset System</button>
+            </div>
+
+            <p class="demo-note">Visual demonstration only. The buttons are not connected to an enforcement engine in this HTML/JS-only version.</p>
+
           </article>
         </div>
       </div>
     </section>
 
-    <!-- STRATEGY 3: BOOKING AND CREDITS -->
+    <!-- BOOKING AND CREDITS -->
     <section class="section" id="booking">
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="section-label">Strategy 03 · Community rewards</p>
-            <h2>Good games deserve good credits.</h2>
-            <p class="section-description">
-              A proposed court check-in and collective rewards experience
-              that encourages every player to help keep noise manageable.
-            </p>
+            <p class="section-label">Strategy</p>
+            <h2>Community rewards</h2>
+            <p class="section-description">A proposed booking policy that encourages quieter play by nudging booking incentives and penalties.</p>
           </div>
+          <div class="tag"><span class="dot-amber"></span>Marketplace</div>
         </div>
 
         <div class="grid">
           <article class="card booking-card">
             <div class="card-top">
               <div>
-                <h3 class="card-title">Your court session</h3>
-                <p class="card-subtitle">
-                  Booking overview · Sample session
-                </p>
+                <h3 class="card-title">Booking summary</h3>
+                <p class="card-subtitle">Community bookings — Sample data</p>
               </div>
-              <span class="tag">PENDING CHECK-IN</span>
+              <div class="card-subtitle">PROPOSAL</div>
             </div>
 
             <div class="booking-summary">
               <div class="summary-item">
-                <span>Facility</span>
-                <strong>Community Court A</strong>
+                <span>Next session</span>
+                <strong>20 CN</strong>
               </div>
               <div class="summary-item">
-                <span>Session duration</span>
-                <strong>60 minutes</strong>
-              </div>
-              <div class="summary-item">
-                <span>Quiet-play target</span>
-                <strong>90% or more</strong>
-              </div>
-              <div class="summary-item">
-                <span>Session window</span>
-                <strong>7 PM – 8 PM</strong>
-              </div>
-            </div>
-
-            <div class="checkin-box">
-              <div class="qr-icon" aria-hidden="true">▦</div>
-              <h3>Ready to check in?</h3>
-              <p>
-                Scan the QR code displayed at the physical court.
-                A real service would verify your booking and identity
-                through an authorized Singpass integration.
-              </p>
-              <button class="pill pill-red" type="button">
-                Scan QR Code on Court
-              </button>
-            </div>
-
-            <div class="quiet-progress">
-              <div class="progress-ring" role="img"
-                   aria-label="Illustrative quiet-play score of 92 percent">
-                <div class="ring-content">
-                  <span class="ring-number">92%</span>
-                  <span class="ring-caption">QUIET PLAY</span>
-                </div>
-              </div>
-
-              <div class="progress-copy">
-                <strong>On track for community credits</strong>
-                <p>
-                  Illustrative session score. Credits are eligible in
-                  this proposal when noise stays within the applicable
-                  threshold for at least 90% of the booking duration.
-                </p>
-              </div>
-            </div>
-
-            <div class="reward-status">
-              <strong>Quiet-play reference thresholds</strong><br>
-              7 AM–7 PM: 65 dB · 7 PM–11 PM: 60 dB
-            </div>
-          </article>
-
-          <article class="card credits-card">
-            <div class="card-top">
-              <div>
-                <h3 class="card-title">Community rewards wallet</h3>
-                <p class="card-subtitle">
-                  Collective stakes · Illustrative balance
-                </p>
-              </div>
-              <span class="tag">PROPOSAL</span>
-            </div>
-
-            <div class="wallet-balance">
-              <div class="wallet-label">Community Noise Credits</div>
-              <div class="wallet-value">120 CN</div>
-              <div class="wallet-caption">
-                Sample collective balance · Not redeemable currency
+                <span>Credits available</span>
+                <strong>120 CN</strong>
               </div>
             </div>
 
             <h4 class="ledger-title">Rewards ledger</h4>
-
             <div class="ledger-row">
               <div>
                 <strong>Quiet-play session</strong>
-                <small>Illustrative collective reward</small>
+                <small>Community reward — 20 CN</small>
               </div>
-              <strong>+20 CN</strong>
+              <div>+20 CN</div>
             </div>
 
             <div class="ledger-row">
@@ -1310,131 +1221,101 @@
                 <strong>Community contribution</strong>
                 <small>Sample reward allocation</small>
               </div>
-              <strong>+10 CN</strong>
+              <div>+10 CN</div>
             </div>
 
             <div class="ledger-row">
               <div>
                 <strong>Potential redemption</strong>
-                <small>Subject to programme approval</small>
+                <small>Subject to program approval</small>
               </div>
-              <strong>ActiveSG$</strong>
+              <div>+10 CN</div>
             </div>
 
-            <div class="ledger-row">
-              <div>
-                <strong>Community redemption</strong>
-                <small>Subject to programme approval</small>
-              </div>
-              <strong>CDC Vouchers</strong>
-            </div>
+            <p class="card-subtitle" style="margin-top:18px;">All balances and rewards shown are mock data. Actual
+              redemption would require an approved rewards programme.</p>
 
-            <p class="card-subtitle" style="margin-top:18px;">
-              All balances and rewards shown are mock data. Actual
-              redemption would require an approved rewards programme.
-            </p>
           </article>
-        </div>
-      </div>
-    </section>
 
-    <!-- PROGRESSIVE ENFORCEMENT -->
-    <section class="section section-soft" id="enforcement">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="section-label">Community safeguards · Progressive enforcement</p>
-            <h2>Fair warnings. Clear consequences.</h2>
-            <p class="section-description">
-              A graduated response model designed to nudge behavior
-              before introducing booking restrictions.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid">
-          <article class="card enforcement-card">
+          <article class="card credits-card">
             <div class="card-top">
               <div>
-                <h3 class="card-title">Breach response framework</h3>
-                <p class="card-subtitle">
-                  Proposed escalation policy
-                </p>
+                <h3 class="card-title">Community Noise Credits</h3>
+                <p class="card-subtitle">Collective stakes — Illustrative balance</p>
               </div>
-              <span class="tag">3-STAGE MODEL</span>
+              <div class="card-subtitle">PROPOSAL</div>
             </div>
 
-            <p class="enforcement-intro">
-              Each stage represents a potential response to a confirmed
-              breach. Actual enforcement would need defined evidence
-              standards, notification procedures, and an appeal process.
-            </p>
-
-            <div class="steps">
-              <div class="step">
-                <div class="step-number">01</div>
-                <h3>First violation</h3>
-                <p>
-                  Real-time sensor alarm: Please lower noise immediately.
-                  A visible or audible nudge encourages prompt correction.
-                </p>
-                <small>REAL-TIME WARNING</small>
-              </div>
-
-              <div class="step">
-                <div class="step-number">02</div>
-                <h3>Second violation</h3>
-                <p>
-                  Loss of credit-earning ability for the next 3 bookings,
-                  subject to review of the recorded breaches.
-                </p>
-                <small>3-BOOKING RESTRICTION</small>
-              </div>
-
-              <div class="step">
-                <div class="step-number">03</div>
-                <h3>Third violation</h3>
-                <p>
-                  Loss of booking priority for the next 1 month,
-                  following the proposed escalation policy.
-                </p>
-                <small>1-MONTH RESTRICTION</small>
-              </div>
+            <div class="wallet-balance">
+              <div class="wallet-label">Community Noise Credits</div>
+              <div class="wallet-value">120 CN</div>
+              <div class="wallet-caption">Sample collective balance — Not redeemable currency</div>
             </div>
 
-            <div class="simulation-controls">
-              <button class="pill pill-red" type="button">
-                Simulate Noise Breach
-              </button>
-              <button class="pill pill-dark" type="button">
-                Reset System
-              </button>
+            <div class="ledger-title">Community contributions</div>
+            <div class="ledger-row">
+              <div>
+                <strong>Community reward</strong>
+                <small>Subject to programme approval</small>
+              </div>
+              <div>+10 CN</div>
             </div>
 
-            <p class="demo-note">
-              Visual demonstration only. The buttons are not connected
-              to an enforcement engine in this HTML/CSS-only version.
-            </p>
           </article>
+
+          <article class="card enforcement-card">
+            <div>
+              <h3 class="card-title">Breach response framework</h3>
+              <p class="enforcement-intro">Adjust the sound level to test responses</p>
+
+              <div class="steps">
+                <div class="step">
+                  <div class="step-number">1</div>
+                  <h3>First violation</h3>
+                  <p>
+                    Real-time sensor alarms: Please lower noise immediately.
+                  </p>
+                  <small>RE-SET WARNING</small>
+                </div>
+                <div class="step">
+                  <div class="step-number">2</div>
+                  <h3>Second violation</h3>
+                  <p>
+                    Loss of booking priority for the next 1 month,
+                    following the proposed escalation policy.
+                  </p>
+                  <small>1-MONTH RESTRICTION</small>
+                </div>
+                <div class="step">
+                  <div class="step-number">3</div>
+                  <h3>Repeated violations</h3>
+                  <p>
+                    Reset system and potential programmatic penalties.
+                  </p>
+                  <small>ACTIVESG$</small>
+                </div>
+              </div>
+
+              <p style="margin-top:18px;">All balances and rewards shown are mock data. Actual
+                redemption would require an approved rewards programme.</p>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- PROPOSAL DISCLOSURE / FAQ -->
+    <!-- FAQ / PROPOSAL -->
     <section class="section" id="faq">
       <div class="container">
         <p class="section-label">Proposal disclosure</p>
         <h2>Frequently asked questions</h2>
-        <p class="section-description">
-          Understand the proposed approach, its benefits, and the
-          considerations involved in community implementation.
-        </p>
+        <p class="section-description">Understand the proposed approach, its benefits, and the
+          considerations involved in community implementation.</p>
 
         <div class="faq-list">
           <details class="faq-item">
-            <summary>
-              What are the core strengths of the Impulse Sensor system?
-            </summary>
+            <summary>What are the core strengths of the Impulse Sensor system?</summary>
             <div class="faq-content">
               It is preventive and real-time; creates a standardized
               evidence base that Town Councils currently lack (resolving
@@ -1445,9 +1326,7 @@
           </details>
 
           <details class="faq-item">
-            <summary>
-              What are the limitations of these strategies?
-            </summary>
+            <summary>What are the limitations of these strategies?</summary>
             <div class="faq-content">
               It requires explicit Town Council and HDB consent to install
               and maintain, depends heavily on reliable, calibrated sensors,
@@ -1458,18 +1337,18 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
     <div class="footer-inner">
-      <div class="footer-brand">ActiveSG · Community Noise Mitigation</div>
-      <div class="footer-note">
-        Concept dashboard · Sample readings and rewards · Not an official
+      <div class="footer-brand">ActiveSG — Community Noise Mitigation</div>
+      <div class="footer-note">Concept dashboard — Sample readings and rewards — Not an official
         ActiveSG service
       </div>
     </div>
   </footer>
-  
+
 <script>
 (() => {
   const slider = document.getElementById("noiseSlider");
@@ -1490,58 +1369,59 @@
     const isPeak = period.value === "peak";
 
     valueDisplay.textContent = db;
-    thresholdValue.textContent = isPeak ? "75 dB" : "50–55 dB";
-    category.textContent = isPeak ? "Peak hours" : "Shoulder hours";
+    // Update displayed guidance: peak uses 65 dB, shoulder guidance uses up to 60 dB
+    thresholdValue.textContent = isPeak ? "65 dB" : "50…60 dB";
 
     let state;
     let message;
 
     if (isPeak) {
       // Peak-hour demonstration:
-      // Green below 65 dB, amber from 65 to 75 dB,
-      // red above 75 dB.
+      // Green below 65 dB, amber at 65 dB, red above 65 dB.
       if (db < 65) {
         state = "green";
-        message = "GREEN · Noise is within the guidance range";
-      } else if (db <= 75) {
+        message = "GREEN — Noise is within the guidance range";
+      } else if (db === 65) {
         state = "amber";
-        message = "AMBER · Approaching the 75 dB threshold";
+        message = "AMBER — Approaching the 65 dB threshold";
       } else {
         state = "red";
-        message = "RED · Noise exceeds 75 dB";
+        message = "RED — Noise exceeds 65 dB";
       }
     } else {
       // Shoulder-hour demonstration:
-      // Green below 50 dB, amber from 50 to 55 dB,
-      // red above 55 dB.
+      // Green below 50 dB, amber from 50 to 60 dB, red above 60 dB.
       if (db < 50) {
         state = "green";
-        message = "GREEN · Noise is within the guidance range";
-      } else if (db <= 55) {
+        message = "GREEN — Noise is within the guidance range";
+      } else if (db <= 60) {
         state = "amber";
-        message = "AMBER · Be mindful of surrounding residents";
+        message = "AMBER — Be mindful of surrounding residents — approaching 60 dB";
       } else {
         state = "red";
-        message = "RED · Noise exceeds the shoulder-hour range";
+        message = "RED — Noise exceeds the 60 dB shoulder-hour limit";
       }
     }
 
-    Object.entries(lights).forEach(([name, light]) => {
-      light.classList.toggle("light-muted", name !== state);
+    // Toggle lights
+    Object.entries(lights).forEach(([name, el]) => {
+      if (!el) return;
+      el.classList.toggle('light-muted', name !== state);
     });
 
-    status.className = "status-message status-" + state;
+    status.className = 'status-message';
+    status.classList.add('status-' + state);
     status.textContent = message;
 
-    slider.setAttribute(
-      "aria-valuetext",
-      db + " decibels, " + state + " status"
-    );
+    // Update accessible aria label on the traffic lights container (if present)
+    const traffic = document.querySelector('.traffic-lights');
+    if (traffic) traffic.setAttribute('aria-label', message);
   }
 
   slider.addEventListener("input", updateNoise);
   period.addEventListener("change", updateNoise);
 
+  // Initialize
   updateNoise();
 })();
 </script>
